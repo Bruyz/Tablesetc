@@ -1,0 +1,60 @@
+
+*{
+    margin:0;
+    padding: 0;
+}
+:root{
+    --primary:rgb(139, 28, 207);
+    --secondary:rgb(255, 255, 255);
+    --border-table:rgb(0, 0, 0);
+}
+table tr th, table tr td{
+    border: 0.1rem solid var(--border-table);
+    padding: 1rem;
+    background: var(--primary);
+}
+
+table{
+    border-collapse: collapse;
+    margin: 1% auto;
+    width: 500px ;
+    height: 500px;
+    font-size: 2rem;
+    background-size: 100% 100%;
+    
+}
+
+body{
+    background: var(--secondary);
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+#topo section{
+    height: 100vh;
+    
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+ul li{
+    width: calc(100%/8.9);
+    text-align: center;
+    list-style-type: none;
+    background-color: var(--primary);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    font-size: 1.3rem;
+}
+li:hover a{
+    text-decoration: underline;
+}
